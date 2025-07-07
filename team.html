@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Istimewa_Journey</title>
+    <link rel="icon" type="image/png" href="asset/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Navbar DONE -->
+    <div class="nav-bg">
+        <!-- Navbar Dark dengan Dropdown -->
+        <nav class="navbar navbar-expand-lg sticky-top shadow">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center fw-bold text-warning" href="index.html">
+                    <img src="asset/logo.png" alt="Logo" width="30" height="30" class="me-2">
+                    Istimewa Journey
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" style=" filter: brightness(0) invert(1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <!-- Explore Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="destinasi.html">Destinasi</a></li>
+                                <li><a class="dropdown-item" href="kuliner.html">Kuliner</a></li>
+                                <li><a class="dropdown-item" href="budaya.html">Budaya</a></li>
+                                <li><a class="dropdown-item" href="akomodasi.html">Akomodasi</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- More Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- About Us Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item active" href="team.html">Team</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Our Team Section DONE -->
+    <section class="bg-white py-5 text-center" id="team">
+        <div class="container-fluid">
+            <h2 class="fw-bold mb-4">Wajah di Balik Istimewa Journey</h2>
+            <div class="container">
+                <p class="mb-5 text-muted">
+                    Kami adalah tim kreatif dari Amikom Yogyakarta yang ingin memperkenalkan keindahan dan kekayaan
+                    budaya
+                    Jogja melalui platform digital yang informatif dan menarik.
+                </p>
+            </div>
+            <div class="row justify-content-center g-4">
+                <!-- Card 1 DONE -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white rounded shadow p-3 text-center h-100 d-flex flex-column align-items-center">
+                        <img src="asset/foto.png" class="rounded-circle mb-3" width="100" height="100"
+                            alt="Team Member 1">
+                        <h6 class="fw-bold mb-1">Husnan Hidayat</h6>
+                        <p class="text-muted small">Project Manager & Finance</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/husnanhdt" class="text-dark me-2"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/husnan-hidayat-1a0472335" class="text-dark me-2"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/husnanhdt?igsh=cm55aWgzdTFuY3lz" class="text-dark"><i
+                                    class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 DONE -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white rounded shadow p-3 text-center h-100 d-flex flex-column align-items-center">
+                        <img src="asset/foto2.png" class="rounded-circle mb-3" width="100" height="100"
+                            alt="Team Member 2">
+                        <h6 class="fw-bold mb-1">Muhammad Naufal</h6>
+                        <p class="text-muted small">Research & Development</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/Opall666" class="text-dark me-2"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/m_palll_?igsh=MWZtZjF3OWtxMThoeg%3D%3D&utm_source=qr" class="text-dark"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 DONE -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white rounded shadow p-3 text-center h-100 d-flex flex-column align-items-center">
+                        <img src="asset/fotosasa.png" class="rounded-circle mb-3" width="100" height="100"
+                            alt="Team Member 3">
+                        <h6 class="fw-bold mb-1">Margareta Dwi Anisa</h6>
+                        <p class="text-muted small">UI/UX Designer</p>
+                        <div class="mt-auto">
+                            <a href="#" class="text-dark me-2"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/margareta-dwi-anisa-0ba98536b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/artnssaa?igsh=aXBvaHZxc2E5Mjdo" class="text-dark"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 DONE -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white rounded shadow p-3 text-center h-100 d-flex flex-column align-items-center">
+                        <img src="asset/bule1.jpg" class="rounded-circle mb-3" width="100" height="100"
+                            alt="Team Member 4">
+                        <h6 class="fw-bold mb-1">Abid Adiyatma</h6>
+                        <p class="text-muted small">Marketing & Outreach</p>
+                        <div class="mt-auto">
+                            <a href="#" class="text-dark me-2"><i class="bi bi-github"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/aadiyatma_?igsh=NHBrMWJ4M3Fpam9u" class="text-dark"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 DONE -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white rounded shadow p-3 text-center h-100 d-flex flex-column align-items-center">
+                        <img src="asset/fotonanda.png" class="rounded-circle mb-3" width="100" height="100"
+                            alt="Team Member 5">
+                        <h6 class="fw-bold mb-1">Nanda Dwi Sugiharto</h6>
+                        <p class="text-muted small">Content Creator</p>
+                        <div class="mt-auto">
+                            <a href="#" class="text-dark me-2"><i class="bi bi-github"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/nnandadwiii_?igsh=ZHI4Zm16aDR2eXA0&utm_source=qr" class="text-dark"><i class="bi bi-instagram"></i></a></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer REVISI -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row">
+
+                <!-- Logo & Deskripsi DONE -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <img src="asset/logo amikom.png" alt="Logo" style="height: 50px;" class="mb-2">
+                    <p>We build smart tourism and cultural experiences by leveraging digital innovation in Yogyakarta.
+                    </p>
+                    <!-- Sosial Media REVISI -->
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- About Us DONE -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">About Us</h6>
+                    <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="team.html" class="text-white text-decoration-none">Team</a></p>
+                </div>
+
+                <!-- Features DONE -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Explore</h6>
+                    <p><a href="destinasi.html" class="text-white text-decoration-none">Destinasi</a></p>
+                    <p><a href="kuliner.html" class="text-white text-decoration-none">Kuliner</a></p>
+                    <p><a href="budaya.html" class="text-white text-decoration-none">Budaya</a></p>
+                </div>
+
+                <!-- Products DONE -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Services</h6>
+                    <p><a href="akomodasi.html" class="text-white text-decoration-none">Akomodasi</a></p>
+                    <p><a href="berita.html" class="text-white text-decoration-none">Artikel</a></p>
+                    <p><a href="events.html" class="text-white text-decoration-none">Events</a></p>
+                </div>
+
+                <!-- Useful Links DONE -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+                    <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Bagian Bawah DONE -->
+            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                <div class="text-center w-100">
+                    <p class="mb-0">© 2025 | Istimewa Journey</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

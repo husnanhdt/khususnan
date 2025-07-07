@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD DONE -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuliner Yogyakarta</title>
+  <link rel="icon" type="image/png" href="asset/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+
+  <style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .badge-location {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 10;
+      text-shadow: 0 5px 9px rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay-text h1 {
+      font-weight: 800;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+    }
+
+    .overlay-text p {
+      font-size: 1.2rem;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 0;
+      color: #e0e0e0;
+      line-height: 1.5;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar DONE -->
+  <div class="nav-bg">
+    <!-- Navbar Dark dengan Dropdown -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow">
+      <div class="container">
+        <!-- Logo DONE -->
+        <a class="navbar-brand d-flex align-items-center fw-bold text-warning" href="index.html">
+          <img src="asset/logo.png" alt="Logo" width="30" height="30" class="me-2">
+          Istimewa Journey
+        </a>
+
+        <!-- Toggler DONE -->
+        <button class="navbar-toggler" style=" filter: brightness(0) invert(1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu DOEN -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+
+            <!-- Home DONE -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <!-- Explore Dropdown DONE -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button"
+                data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="destinasi.html">Destinasi</a></li>
+                <li><a class="dropdown-item active" href="kuliner.html">Kuliner</a></li>
+                <li><a class="dropdown-item" href="budaya.html">Budaya</a></li>
+                <li><a class="dropdown-item" href="akomodasi.html">Akomodasi</a></li>
+              </ul>
+            </li>
+
+            <!-- More Dropdown DONE -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                data-bs-toggle="dropdown">
+                More
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us Dropdown DONE -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                data-bs-toggle="dropdown">
+                About Us
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Carousel Section DONE -->
+    <div id="carouselwisata" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asset/makanan.jpg" class="img-fluid w-100" alt="..." style="object-fit: cover; height: 90vh;">
+        </div>
+        <div class="overlay-text">
+          <h1 class="display-4 fw-bold">Eksplor Kuliner Khas Yogyakarta</h1>
+          <p class="lead">Rekomendasi kuliner di Yogyakarta – semua ada di sini!</p>
+        </div>
+  </main>
+
+  <!-- Kuliner Cards DONE -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Kuliner 1 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Sleman</span>
+            <img src="asset/gudeg-yu-djum-cover.jpg" class="card-img-top" alt="Gudeg">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gudeg Yu Djum</h5>
+              <p class="card-text">Gudegnya tidak berkuah dan rasanya dominan manis. Gudeg Yu Djum ini paling legendaris
+                di Jogja. Cabangnya banyak, tetapi dapur utamanya terletak di Mbarek dan buka dari pk 5 pagi. Kita bisa
+                melihat proses memasaknya yang masih menggunakan kayu bakar. Selengkapnya lihat di GUDEG YU DJUM - Gudeg
+                Paling Legendaris di Jogja.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="gudeg.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 2 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Sleman</span>
+            <img src="asset/bakpia.jpg" class="card-img-top" alt="bakpia">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bakpia Kurnia Sari</h5>
+              <p class="card-text">Seperti gudeg, bakpia juga identik dengan makanan khas Jogja. Bakpia Kurnia Sari
+                sangat populer karena kulitnya yang tipis dan lembut. Bakpia ini juga tahan 10 hari pada suhu ruangan
+                sehingga cocok untuk dijadikan oleh-oleh dari Jogja. Selengkapnya lihat di BAKPIA KURNIA SARI - Salah
+                Satu Bakpia Paling Enak di Jogja.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="bakpia.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 3 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Sleman</span>
+            <img src="asset/klotok.webp" class="card-img-top" alt="Kopi Klotok">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Klotok</h5>
+              <p class="card-text">Masakan yang disajikan memang bersahaja, seperti sayur lodeh terong, dll. Namun,
+                rasanya sangat lezat dan harganya bersahabat, rata-rata di bawah Rp10.000. Dengan atmosfer pedesaan
+                Jawa, Warung Kopi Klotok dipenuhi wisatawan sejak buka pukul 7 pagi. Selengkapnya lihat di KOPI KLOTOK -
+                Kuliner Jogja yang Terkenal di Jalan Kaliurang.</p>
+              <a href="kopi.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 4 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/raminten.png" class="card-img-top" alt="Raminten">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">House Of Raminten</h5>
+              <p class="card-text">merupakan alternatif tempat makan sekaligus tempat nongkrong di Yogyakarta.
+                Angkringan semi cafe ini menyediakan beragam menu mulai dari menu angkringan hingga menu-menu yang
+                terdengar unik dan nyentrik. Suasana tradisional Jawa sangat kentara di cafe ini. Selengkapnya lihat di
+                House Of Raminten.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="raminten.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 5 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/bakmi.jpg" class="card-img-top" alt="Bakmi">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bakmi Jowo Mbah Gito</h5>
+              <p class="card-text">Tak hanya kelezatan santapannya saja yang ditawarkan, namun juga suasana
+                Jawa-tradisional yang membuat pengunjung akan mengarungi lorong waktu menuju masa silam. Selengkapnya
+                lihat di BAKMI JOWO MBAH GITO - Bersantap Seraya Mengenang Suasana Rumah Eyang.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="bakmi.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 6 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/pawon.jpg" class="card-img-top" alt="Pawon">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gudeg Pawon</h5>
+              <p class="card-text">Dapur menjadi tempat krusial bagi rumah makan. Saking krusialnya, terkadang
+                pengunjung tidak diizinkan untuk mendatangi tempat untuk memasak itu. Namun, berbeda dengan Gudeg Pawon
+                yang malah mengharuskan semua pengunjungnya masuk ke dapur. Selengkapnya lihat di GUDEG PAWON - Langsung
+                Saja ke Dapur Ketika Lapar Menghambur.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="pawon.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 7 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/soto.jpg" class="card-img-top" alt="Soto">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Soto Kadipiro</h5>
+              <p class="card-text">Ingin merasakan bagaimana rasa soto yang usianya hampir satu abad? Cobalah soto
+                Kadipiro. Eits, tapi jangan sampai salah pilih, karena hanya ada satu yang asli. Selengkapnya lihat di
+                SOTO KADIPIRO - Resep Turun Temurun Hampir 100 Tahun.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="soto.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 8 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/bale.jpg" class="card-img-top" alt="Bale Raos">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bale Raos</h5>
+              <p class="card-text">Bale Raos adalah satu-satunya restoran yang menyajikan masakan kesukaan Sultan
+                Yogyakarta. Selengkapnya lihat di Bale Raos.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="bale.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuliner 9 DONE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg position-relative h-100">
+            <span class="badge bg-secondary badge-location">Kota Yogyakarta</span>
+            <img src="asset/klangenan.jpg" class="card-img-top" alt="Klangenan">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Warung Klangenan</h5>
+              <p class="card-text">Dengan konsep makanan angkringan di rumah joglo, warung yang satu ini pas untuk temu
+                kangen kawan-kawan lama. Selengkapnya lihat di WARUNG KLANGENAN - Temu Kangen Kawan Lama.</p>
+              <div class="mt-auto">
+                <div class="btn-group">
+                  <a href="klangenan.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer DONE -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row">
+
+        <!-- Logo & Deskripsi DONE -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <img src="asset/logo amikom.png" alt="Logo" style="height: 50px;" class="mb-2">
+          <p>We build smart tourism and cultural experiences by leveraging digital innovation in Yogyakarta.
+          </p>
+          <!-- Sosial Media DONE -->
+          <div>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- About Us DONE -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">About Us</h6>
+          <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="team.html" class="text-white text-decoration-none">Team</a></p>
+        </div>
+
+        <!-- Features DONE -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Explore</h6>
+          <p><a href="destinasi.html" class="text-white text-decoration-none">Destinasi</a></p>
+          <p><a href="kuliner.html" class="text-white text-decoration-none">Kuliner</a></p>
+          <p><a href="budaya.html" class="text-white text-decoration-none">Budaya</a></p>
+        </div>
+
+        <!-- Products DONE -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Services</h6>
+          <p><a href="akomodasi.html" class="text-white text-decoration-none">Akomodasi</a></p>
+          <p><a href="berita.html" class="text-white text-decoration-none">Artikel</a></p>
+          <p><a href="events.html" class="text-white text-decoration-none">Events</a></p>
+        </div>
+
+        <!-- Useful Links DONE -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+          <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- Bagian Bawah DONE -->
+      <div class="d-flex justify-content-between flex-wrap align-items-center">
+        <div class="text-center w-100">
+          <p class="mb-0">© 2025 | Istimewa Journey</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
